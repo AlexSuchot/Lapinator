@@ -1,0 +1,202 @@
+html, body {
+  font-family: Helvetica, sans-serif;
+  color: #c8cbd6;
+  margin: 0;
+  min-width: 370px; }
+  html .globalContainer, body .globalContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex; }
+    @media screen and (max-width: 1024px) {
+      html .globalContainer, body .globalContainer {
+        background-image: url("../img/Group.svg");
+        background-cover: cover;
+        background-repeat: no-repeat;
+        background-size: 100%; } }
+    html .globalContainer .leftContainer, body .globalContainer .leftContainer {
+      flex: 1;
+      z-index: 2; }
+      @media screen and (max-width: 1024px) {
+        html .globalContainer .leftContainer, body .globalContainer .leftContainer {
+          flex: 1; } }
+      html .globalContainer .leftContainer navbar, body .globalContainer .leftContainer navbar {
+        display: flex;
+        height: 70px;
+        width: 100%;
+        flex-direction: row; }
+        html .globalContainer .leftContainer navbar img, body .globalContainer .leftContainer navbar img {
+          max-width: 40px;
+          max-height: 40px;
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 3%; }
+        html .globalContainer .leftContainer navbar .topnav, body .globalContainer .leftContainer navbar .topnav {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          html .globalContainer .leftContainer navbar .topnav a, body .globalContainer .leftContainer navbar .topnav a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding-bottom: 6px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 2vw;
+            padding-right: 2vw; }
+            @media screen and (max-width: 768px) {
+              html .globalContainer .leftContainer navbar .topnav a, body .globalContainer .leftContainer navbar .topnav a {
+                display: none; } }
+            html .globalContainer .leftContainer navbar .topnav a:hover, body .globalContainer .leftContainer navbar .topnav a:hover {
+              color: #00a4ff; }
+            html .globalContainer .leftContainer navbar .topnav a.active, body .globalContainer .leftContainer navbar .topnav a.active {
+              border-bottom: 3px solid #00a4ff;
+              color: #00a4ff; }
+            html .globalContainer .leftContainer navbar .topnav a li, body .globalContainer .leftContainer navbar .topnav a li {
+              list-style-type: none; }
+        @media screen and (max-width: 768px) {
+          html .globalContainer .leftContainer navbar .responsiveNavbar, body .globalContainer .leftContainer navbar .responsiveNavbar {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 0; } }
+        @media screen and (max-width: 768px) {
+          html .globalContainer .leftContainer navbar .responsiveNavbar a, body .globalContainer .leftContainer navbar .responsiveNavbar a {
+            display: flex;
+            padding: 22px;
+            vertical-align: center;
+            align-items: center;
+            justify-content: center; } }
+        html .globalContainer .leftContainer navbar a.icon, body .globalContainer .leftContainer navbar a.icon {
+          display: none;
+          margin-right: 5%; }
+          @media screen and (max-width: 768px) {
+            html .globalContainer .leftContainer navbar a.icon, body .globalContainer .leftContainer navbar a.icon {
+              float: right;
+              margin-top: 5%;
+              display: inline-flex;
+              color: black;
+              font-size: 25px;
+              -webkit-animation-name: bounce;
+              animation-name: bounce;
+              -webkit-transform-origin: center bottom;
+              transform-origin: center bottom; } }
+      html .globalContainer .leftContainer h1, body .globalContainer .leftContainer h1 {
+        font-size: 3.1em;
+        margin-top: 30%;
+        font-weight: bold;
+        color: black;
+        margin-left: 8%;
+        margin-bottom: 1%; }
+        @media screen and (max-width: 768px) {
+          html .globalContainer .leftContainer h1, body .globalContainer .leftContainer h1 {
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 45%;
+            justify-content: center;
+            text-align: center; } }
+      html .globalContainer .leftContainer .subtitle, body .globalContainer .leftContainer .subtitle {
+        color: #9c9c9c;
+        font-size: 0.8em;
+        margin-left: 8%;
+        margin-top: 0; }
+        @media screen and (max-width: 768px) {
+          html .globalContainer .leftContainer .subtitle, body .globalContainer .leftContainer .subtitle {
+            margin-left: 15%;
+            margin-right: 15%;
+            justify-content: center;
+            text-align: center; } }
+      html .globalContainer .leftContainer .formContainer, body .globalContainer .leftContainer .formContainer {
+        margin-top: 10%;
+        border-radius: 35px;
+        box-shadow: 0 0px 20px rgba(156, 156, 156, 0.19), 0 6px 6px rgba(156, 156, 156, 0.19);
+        height: 65px;
+        width: 90%;
+        border: none;
+        background: white;
+        margin-left: 8%; }
+        @media screen and (max-width: 1024px) {
+          html .globalContainer .leftContainer .formContainer, body .globalContainer .leftContainer .formContainer {
+            margin-left: auto;
+            margin-right: auto; } }
+        html .globalContainer .leftContainer .formContainer form, body .globalContainer .leftContainer .formContainer form {
+          display: flex;
+          justify-content: center;
+          width: 130%;
+          align-items: center;
+          height: 100%;
+          vertical-align: middle; }
+          @media screen and (max-width: 1024px) {
+            html .globalContainer .leftContainer .formContainer form, body .globalContainer .leftContainer .formContainer form {
+              width: 100%;
+              flex-wrap: wrap; } }
+          @media screen and (max-width: 768px) {
+            html .globalContainer .leftContainer .formContainer form, body .globalContainer .leftContainer .formContainer form {
+              width: 100%;
+              flex-wrap: wrap; } }
+          html .globalContainer .leftContainer .formContainer form input, body .globalContainer .leftContainer .formContainer form input {
+            margin-top: 20px;
+            margin-bottom: auto;
+            border: none;
+            outline: none;
+            width: 350px;
+            font-size: 1.2em;
+            color: lightgray; }
+            @media screen and (max-width: 1024px) {
+              html .globalContainer .leftContainer .formContainer form input, body .globalContainer .leftContainer .formContainer form input {
+                width: 80%;
+                text-align: center; } }
+            @media screen and (max-width: 768px) {
+              html .globalContainer .leftContainer .formContainer form input, body .globalContainer .leftContainer .formContainer form input {
+                width: 80%;
+                text-align: center; } }
+          html .globalContainer .leftContainer .formContainer form button, body .globalContainer .leftContainer .formContainer form button {
+            background: #50e3c2;
+            color: white;
+            border-radius: 32px;
+            padding: 2%;
+            height: 90%;
+            width: 300px;
+            border: none;
+            outline: none;
+            font-size: 1.1em; }
+            @media screen and (max-width: 1024px) {
+              html .globalContainer .leftContainer .formContainer form button, body .globalContainer .leftContainer .formContainer form button {
+                width: 200px;
+                margin-top: 60px; } }
+          html .globalContainer .leftContainer .formContainer form i, body .globalContainer .leftContainer .formContainer form i {
+            width: 1%;
+            color: lightgrey;
+            font-size: 25px;
+            margin-left: 5%;
+            margin-right: 10%; }
+            @media screen and (max-width: 1024px) {
+              html .globalContainer .leftContainer .formContainer form i, body .globalContainer .leftContainer .formContainer form i {
+                margin-top: 20px;
+                margin-left: 0; } }
+      html .globalContainer .leftContainer .password, body .globalContainer .leftContainer .password {
+        color: lightgrey;
+        font-style: italic;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 10%; }
+        @media screen and (max-width: 1024px) {
+          html .globalContainer .leftContainer .password, body .globalContainer .leftContainer .password {
+            margin-top: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            align-items: center;
+            justify-content: center; } }
+    html .globalContainer .rightContainer, body .globalContainer .rightContainer {
+      flex: 2;
+      z-index: 1;
+      background-image: url("../img/cute_rabbit.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media screen and (max-width: 1024px) {
+        html .globalContainer .rightContainer, body .globalContainer .rightContainer {
+          display: none; } }
+
+/*# sourceMappingURL=main.css.map */
